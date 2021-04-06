@@ -1,2 +1,2 @@
 # caminodesantiago
-datos de peregrinos y licencias deportivas de atletismo
+data on pilgrims and athletics sports licenses
