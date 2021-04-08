@@ -7,6 +7,8 @@ import seaborn as sns
 
 
 # pilgrim
+# pilgrims_Camino_Santiago_2004-2019.csv
+# https://raw.githubusercontent.com/luisballesteros/caminodesantiago/main/pilgrims_Camino_Santiago_2004-2019.csv
 pilgrim = "pilgrims_Camino_Santiago_2004-2019.csv"
 pilgrim_df = pd.read_csv(pilgrim)
 pilgrim_df = pilgrim_df.set_index("year")
@@ -15,6 +17,7 @@ pilgrim_percent_df = pilgrim_df.div(pilgrim_df.sum(axis=1), axis=0)*100
 print(pilgrim_percent_df)
 
 # athletics
+# https://raw.githubusercontent.com/luisballesteros/caminodesantiago/main/athletics_licenses_by_gender.csv
 athletics = "athletics_licenses_by_gender.csv"
 athletics_df = pd.read_csv(athletics)
 athletics_df .drop(columns=['total'], inplace=True)
